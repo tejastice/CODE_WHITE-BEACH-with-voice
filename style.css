@@ -84,18 +84,19 @@ body, html {
 }
 
 /* ゲーム本編画面 */
-#background-layer, #character-layer {
+#background-layer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-#background-image, #character-image {
+#background-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: opacity 0.5s;
+    z-index: 1;
 }
 #character-layer {
     position: absolute;
@@ -112,6 +113,8 @@ body, html {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    z-index: 2;
+    display: block;
 }
 
 #textbox {
