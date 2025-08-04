@@ -109,13 +109,31 @@ function advanceScene() {
     if (!currentBlockData || gameState.currentIndex >= currentBlockData.length) {
         // ブロックの終端に達した場合
         const lastLine = currentBlockData ? currentBlockData[currentBlockData.length - 1] : {};
-        handleBlockEnd(lastLine);
+        
+        // 次のブロックへの遷移を試す
+        const hasTransition = handleBlockEnd(lastLine);
+        
+        // 遷移がない場合は、エンディングブロックかどうかチェック
+        if (!hasTransition) {
+            // エンディングブロックまたは進行可能な次のブロックがない場合はエンディング表示
+            if (isEndingBlock(gameState.currentBlock) || lastLine.ending || lastLine.type === 'ending') {
+                showEnding();
+            } else {
+                // デフォルトでエンディング処理
+                showEnding();
+            }
+        }
         return;
     }
     
     const lineData = currentBlockData[gameState.currentIndex];
     displayLine(lineData);
     gameState.currentIndex++;
+}
+
+// エンディングブロックかどうかを判定
+function isEndingBlock(blockName) {
+    return blockName && (blockName.includes('ending_') || blockName === 'ending');
 }
 
 // ===== 画面表示の心臓部 =====
@@ -157,14 +175,22 @@ function displayLine(lineData) {
     updateBackButtonVisibility();
 }
 
-// ===== ブロック終端の処理 =====
+// ===== ブロック終端の処理（すべての遷移タイプ対応） =====
 function handleBlockEnd(lastLine = {}) {
+    // next_block による次のブロックへの遷移（最優先）
+    if (lastLine.next_block) {
+        gameState.currentBlock = lastLine.next_block;
+        gameState.currentIndex = 0;
+        advanceScene();
+        return true; // 遷移が発生した
+    }
+    
     // next_act による次のブロックへの遷移
     if (lastLine.next_act) {
         gameState.currentBlock = lastLine.next_act;
         gameState.currentIndex = 0;
         advanceScene();
-        return;
+        return true; // 遷移が発生した
     }
     
     // branch_act3 による分岐処理
@@ -180,17 +206,10 @@ function handleBlockEnd(lastLine = {}) {
         gameState.currentBlock = route;
         gameState.currentIndex = 0;
         advanceScene();
-        return;
+        return true; // 遷移が発生した
     }
     
-    // ending キーによるエンディング処理
-    if (lastLine.ending || lastLine.type === 'ending') {
-        showEnding();
-        return;
-    }
-    
-    // デフォルトでエンディング処理
-    showEnding();
+    return false; // 遷移が発生しなかった
 }
 
 // ===== 選択肢の処理 =====
@@ -221,12 +240,12 @@ function selectChoice(option) {
     elements.choicesContainer.classList.add('hidden');
     elements.textbox.style.display = 'flex';
     
-    // 3. 次のブロックへの遷移処理
+    // 3. 次のブロックへの遷移処理（必須）
     if (option.next_block) {
         // 履歴に現在の位置を保存
         addToHistory();
         
-        // 新しいブロックに移動
+        // 新しいブロック（エンディングブロックを含む）に移動
         gameState.currentBlock = option.next_block;
         gameState.currentIndex = 0;
         
