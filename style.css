@@ -76,6 +76,7 @@ body, html {
     border-radius: 20px;
     text-align: center;
     width: 300px;
+    box-sizing: border-box;
 }
 .protagonist-card img {
     height: 250px;
@@ -209,10 +210,38 @@ body, html {
 
 /* スマホ対応 */
 @media (max-width: 768px) {
-    .protagonist-container { flex-direction: column; }
-    .protagonist-card { width: 80vw; }
+    .protagonist-container { flex-direction: column; align-items: center; gap: 20px; padding: 20px; }
+    .protagonist-card { 
+        width: 90vw; 
+        max-width: 300px;
+        padding: 15px;
+    }
+    .protagonist-card img { 
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    .protagonist-card h2 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    .protagonist-card p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin: 10px 0;
+    }
+    #protagonist-select h1 {
+        font-size: 1.5rem;
+        margin: 10px 0 20px 0;
+    }
+    #game-screen {
+        touch-action: manipulation;
+    }
     #textbox { height: 35%; padding: 15px; }
     #dialogue-text { font-size: 1.0rem; }
     #speaker-name { font-size: 1rem; padding: 5px 12px; top: -35px; }
     #choices-container { padding: 15px; }
+    #character-layer {
+        bottom: 35%;
+        height: 65%;
+    }
 }
