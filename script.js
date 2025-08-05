@@ -89,6 +89,7 @@ function selectProtagonist(protagonistKey) {
         currentBlock: protagonistKey === '隠しシナリオ' ? 'main' : 'act1',
         currentIndex: 0,
         totalScore: 0,
+        lastChoiceScore: 0,
         isPlaying: true,
         isChoiceScene: false,
         currentCharacterImage: '',
@@ -209,6 +210,32 @@ function handleBlockEnd(lastLine = {}) {
         return true; // 遷移が発生した
     }
     
+    // branch_ending による最終エンディング分岐処理
+    if (lastLine.branch_ending) {
+        // 履歴に現在の位置を保存してから遷移
+        addToHistory();
+        
+        let endingRoute;
+        if (gameState.totalScore >= 6) {
+            endingRoute = 'ending_true';
+        } else if (gameState.totalScore >= 1) {
+            // ノーマルエンドの場合、最後の選択肢の点数で分岐
+            if (gameState.lastChoiceScore === 2) {
+                endingRoute = 'ending_normal_from_true';
+            } else if (gameState.lastChoiceScore === 0) {
+                endingRoute = 'ending_normal_from_bad';
+            } else {
+                endingRoute = 'ending_normal';
+            }
+        } else {
+            endingRoute = 'ending_bad';
+        }
+        gameState.currentBlock = endingRoute;
+        gameState.currentIndex = 0;
+        advanceScene();
+        return true; // 遷移が発生した
+    }
+    
     return false; // 遷移が発生しなかった
 }
 
@@ -234,6 +261,8 @@ function displayChoice(options) {
 function selectChoice(option) {
     // 1. スコアを加算
     gameState.totalScore += option.score !== undefined ? option.score : 0;
+    // 最後の選択肢のポイントを記録
+    gameState.lastChoiceScore = option.score !== undefined ? option.score : 0;
     
     // 2. 選択肢モードを終了
     gameState.isChoiceScene = false;
@@ -260,10 +289,12 @@ function selectChoice(option) {
 
 // ===== 履歴管理システム =====
 function addToHistory() {
-    // シンプルな位置情報のみを履歴に保存
+    // 位置情報とスコア情報を履歴に保存
     const positionData = {
         block: gameState.currentBlock,
-        index: gameState.currentIndex
+        index: gameState.currentIndex,
+        totalScore: gameState.totalScore,
+        lastChoiceScore: gameState.lastChoiceScore
     };
     gameState.history.push(positionData);
     
@@ -287,7 +318,15 @@ function goBack() {
     gameState.currentBlock = prevPosition.block;
     gameState.currentIndex = prevPosition.index;
     
-    // 4. その位置の画面を再描画
+    // 4. スコア情報も復元
+    if (prevPosition.totalScore !== undefined) {
+        gameState.totalScore = prevPosition.totalScore;
+    }
+    if (prevPosition.lastChoiceScore !== undefined) {
+        gameState.lastChoiceScore = prevPosition.lastChoiceScore;
+    }
+    
+    // 5. その位置の画面を再描画
     advanceScene();
 }
 
@@ -363,20 +402,8 @@ function showEnding() {
     
     elements.endingTitle.textContent = endingTitles[endingType];
     
-    // エンディングテキストの生成
-    const endingBlockKey = `${protagonistKey.replace('編', '')}_ending_${endingType}`;
-    let epilogueText = "プレイありがとうございました。";
-    
-    if (scenarioData[protagonistKey] && scenarioData[protagonistKey][endingBlockKey]) {
-        const endingBlockData = scenarioData[protagonistKey][endingBlockKey].scenes;
-        if (endingBlockData && endingBlockData.length > 0) {
-            epilogueText = endingBlockData.map(line => 
-                (line.character ? `${line.character}: ` : '') + line.text
-            ).join('\n\n');
-        }
-    }
-    
-    elements.endingText.textContent = epilogueText;
+    // エンディングテキストは簡潔なメッセージのみ
+    elements.endingText.textContent = "プレイありがとうございました。";
     
     // TRUE ENDの場合はクリア記録を保存
     if (endingType === 'true' && protagonistKey !== '隠しシナリオ') {

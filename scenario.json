@@ -132,34 +132,53 @@
       { "type": "dialogue", "character": "ショウ", "text": "（やばい、なんか、めちゃくちゃ可愛いんだが…！？ いや待て、俺。ここでどう動くべきだ？ これはチャンスだ。彼女の鎧が剥がれた今、俺の哲学、いや、男としての真価が問われる…！）", "char_image": "image/syou1.png" },
       { "type": "choice", "options": [ { "text": "論理で説明できないものもある。それを受け入れるのも強さだ", "score": 2, "next_block": "act2_choice_2pt" }, { "text": "こいつはもうダメだ。次の動物を見に行こうぜ", "score": 1, "next_block": "act2_choice_1pt" }, { "text": "なんだ、そんな小動物ごときに動揺するとは。お前も大したことないな", "score": 0, "next_block": "act2_choice_0pt" } ] }
     ],
-    "act2_choice_2pt": [
-      { "type": "dialogue", "character": "ショウ", "text": "……フッ。論理で説明できないものもある。それを受け入れるのも、また強さだ", "char_image": "image/syou1.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……強さ、だと？", "char_image": "keisukee/keisuke21.png" },
-      { "type": "dialogue", "character": "ショウ", "text": "そうだ。100kgのバーベルを挙げるには、ただ力むだけじゃダメだ。筋肉の声を聞き、その日のコンディションを受け入れ、時には引く勇気も必要になる。自分の理解を超える現象に直面した時、それを無理やり捻じ伏せようとするのはただの傲慢だ。受け入れ、認めた上で、自分の中に新しい引き出しを作る。それこそが真の強靭さ…フィジカルにも、メンタルにも通じる理屈だ", "char_image": "image/syou1.png" },
-      { "type": "dialogue", "character": "ショウ", "text": "『可愛い』と感じる自分を、お前が受け入れればいい。それだけのことだ" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……お前は、本当に……" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……脳まで筋肉だと思っていたが、たまにはマシなことを言うんだな" },
-      { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "（その後、俺たちはイルカショーを見たり、他の動物たちを見て回ったりした。けいすけの毒舌は相変わらずだったが、その言葉にはどこか棘が取れ、俺の隣を歩く距離も、心なしか近くなったように感じた）", "char_image": "image/syou1.png" },
-      { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "（そして、閉園時間。俺たちはアドベンチャーワールドを後にした）", "branch_act3": true }
-    ],
-    "act2_choice_1pt": [
-      { "type": "dialogue", "character": "ショウ", "text": "お、おい、けいすけ？ ……ダメだこりゃ。しょう、こいつはもう思考がショートしてる。次の動物を見に行こうぜ", "char_image": "image/syou2.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……触るな", "char_image": "keisukee/keisuke14.png" },
-      { "type": "dialogue", "character": "ショウ", "text": "え？", "char_image": "image/syou2.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……フン。少しノイズの多い情報に触れただけだ。もう問題ない。それより、お前は本当にデリカシーという概念を母親の腹の中に忘れてきたんだな", "char_image": "keisukee/keisuke14.png" },
-      { "type": "dialogue", "character": "しょう", "text": "ま、まあまあ！ けいすけちゃん！ レッサーパンダ、可愛かったよね！ ねっ！？", "char_image": "image/wakayama1.png" },
-      { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "（その後、イルカショーなどを見て回ったが、けいすけはほとんど口を開かなかった。時折、ボソッと皮肉を言うだけで、明らかに壁を作っているのが分かる。俺もどう話しかけていいか分からず、しょうだけが空回りしながら場を盛り上げようとしていた）", "char_image": null },
-      { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "（気まずい空気のまま、閉園時間。俺たちはアドベンチャーワールドを後にした）", "branch_act3": true }
-    ],
-    "act2_choice_0pt": [
-      { "type": "dialogue", "character": "ショウ", "text": "フン。なんだ、そんな小動物ごときに動揺するとは。お前も大したことないな。もっと鉄の意志を持ってるかと思ったぜ", "char_image": "image/syou1.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……そうか。それが、お前の出した結論か", "char_image": "keisukee/keisuke14.png" },
-      { "type": "dialogue", "character": "ショウ", "text": "え…？", "char_image": "image/syou1.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "ボクの失態を嘲笑うとはな。お前の知性はその程度だと、よく分かった。……もういい。お前たちと過ごす時間は、一秒たりとも価値がない", "char_image": "keisukee/keisuke14.png" },
-      { "type": "dialogue", "character": "しょう", "text": "け、けいすけちゃん！ 待って！ ショウも悪気があって言ったわけじゃ…！", "char_image": "image/wakayama1.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "黙れ、しょう。友人を選ぶなら、もう少しマシなやつにしろ", "char_image": "keisukee/keisuke14.png" },
-      { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "（俺としょうは、ガラスの向こうで無邪気に遊ぶレッサーパンダと、去っていく彼女の後ろ姿を、ただ呆然と見送ることしかできなかった）", "char_image": null },
-      { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "（アドベンチャーワールドからの帰り道、バスの中は信じられないほど気まずかった）", "branch_act3": true }
+"act2_choice_2pt": [
+  { "type": "dialogue", "character": "ショウ", "text": "……フッ。論理で説明できないものもある。それを受け入れるのも、また強さだ", "char_image": "image/syou1.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……強さ、だと？", "char_image": "keisukee/keisuke21.png" },
+  { "type": "dialogue", "character": "ショウ", "text": "そうだ。100kgのバーベルを挙げるには、ただ力むだけじゃダメだ。筋肉の声を聞き、その日のコンディションを受け入れ、時には引く勇気も必要になる。自分の理解を超える現象に直面した時、それを無理やり捻じ伏せようとするのはただの傲慢だ。受け入れ、認めた上で、自分の中に新しい引き出しを作る。それこそが真の強靭さ…フィジカルにも、メンタルにも通じる理屈だ", "char_image": "image/syou1.png" },
+  { "type": "dialogue", "character": "ショウ", "text": "『可愛い』と感じる自分を、お前が受け入れればいい。それだけのことだ" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……お前は、本当に……" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……脳まで筋肉だと思っていたが、たまにはマシなことを言うんだな" },
+  { "type": "dialogue", "character": null, "text": "（その後、俺たちはイルカショーを見たり、他の動物たちを見て回ったりした。けいすけの毒舌は相変わらずだったが、その言葉にはどこか棘が取れ、俺の隣を歩く距離も、心なしか近くなったように感じた）" },
+  { "type": "dialogue", "character": null, "text": "（そして、閉園時間。俺たちはアドベンチャーワールドを後にした）" },
+  { "type": "dialogue", "character": null, "text": "（しょうが「腹減った！晩飯の買い出ししてくる！」と言って走り去り、俺とけいすけは二人きりで、夕日に染まる千畳敷の岩畳に腰を下ろしていた。波が岩肌を洗う音だけが、静かに響く）", "background": "haikei/haikei9.jpg" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……なあ、ショウ", "char_image": "keisukee/keisuke22.png" },
+  { "type": "dialogue", "character": "ショウ", "text": "なんだ？", "char_image": "image/syou1.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "今日のレッサーパンダ…いや、お前の言っていたこと。少しだけ、分かった気がする" },
+  { "type": "dialogue", "character": null, "text": "（彼女は、水平線に沈んでいく太陽を見つめながら、ぽつりと語り始めた。それは、誰にも見せたことのない、弱さを少しだけ含んだ声だった）" },
+  { "type": "dialogue", "character": "けいすけ", "text": "ボクは、ずっと合理性だけを信じてきた。非合理な感情は、切り捨てるべきノイズだと。だが、ボクが『進路を決められない』でいる本当の理由は、たぶん…", "branch_act3": true }
+],
+"act2_choice_1pt": [
+  { "type": "dialogue", "character": "ショウ", "text": "お、おい、けいすけ？ ……ダメだこりゃ。しょう、こいつはもう思考がショートしてる。次の動物を見に行こうぜ", "char_image": "image/syou2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……触るな", "char_image": "keisukee/keisuke14.png" },
+  { "type": "dialogue", "character": "ショウ", "text": "え？", "char_image": "image/syou2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……フン。少しノイズの多い情報に触れただけだ。もう問題ない。それより、お前は本当にデリカシーという概念を母親の腹の中に忘れてきたんだな" },
+  { "type": "dialogue", "character": "しょう", "text": "ま、まあまあ！ けいすけちゃん！ レッサーパンダ、可愛かったよね！ ねっ！？", "char_image": "image/wakayama1.png" },
+  { "type": "dialogue", "character": null, "text": "（その後、イルカショーなどを見て回ったが、けいすけはほとんど口を開かなかった。時折、ボソッと皮肉を言うだけで、明らかに壁を作っているのが分かる。俺もどう話しかけていいか分からず、しょうだけが空回りしながら場を盛り上げようとしていた）" },
+  { "type": "dialogue", "character": null, "text": "（気まずい空気のまま、閉園時間。俺たちはアドベンチャーワールドを後にした）" },
+  { "type": "dialogue", "character": null, "text": "（3人で並んで砂浜を歩く。誰も口を開かず、ただ波の音だけが聞こえる。しょうが何か言いたそうに、俺とけいすけの顔を交互に見ている）", "background": "haikei/haikei18.jpg", "char_image": "image/syou2.png" },
+  { "type": "dialogue", "character": "ショウ", "text": "（くそ…なんであんなこと言っちまったんだ、俺は…。完全に機嫌を損ねてやがる…。だが、どう謝れば…）" },
+  { "type": "dialogue", "character": null, "text": "（俺が内心で葛藤していると、けいすけが不意に立ち止まった）" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……ボクは、ここで失礼する", "char_image": "keisukee/keisuke21.png" },
+  { "type": "dialogue", "character": "しょう", "text": "えっ、けいすけちゃん！ これからみんなでご飯じゃ…", "char_image": "image/wakayama1.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "気分じゃない。じゃあな", "branch_act3": true }
+],
+"act2_choice_0pt": [
+  { "type": "dialogue", "character": "ショウ", "text": "フン。なんだ、そんな小動物ごときに動揺するとは。お前も大したことないな。もっと鉄の意志を持ってるかと思ったぜ", "char_image": "image/syou1.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……そうか。それが、お前の出した結論か", "char_image": "keisukee/keisuke14.png" },
+  { "type": "dialogue", "character": "ショウ", "text": "え…？", "char_image": "image/syou1.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "ボクの失態を嘲笑うとはな。お前の知性はその程度だと、よく分かった。……もういい。お前たちと過ごす時間は、一秒たりとも価値がない" },
+  { "type": "dialogue", "character": "しょう", "text": "け、けいすけちゃん！ 待って！ ショウも悪気があって言ったわけじゃ…！", "char_image": "image/wakayama1.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "黙れ、しょう。友人を選ぶなら、もう少しマシなやつにしろ" },
+  { "type": "dialogue", "character": null, "text": "（俺としょうは、ガラスの向こうで無邪気に遊ぶレッサーパンダと、去っていく彼女の後ろ姿を、ただ呆然と見送ることしかできなかった）" },
+  { "type": "dialogue", "character": null, "text": "（アドベンチャーワールドからの帰り道、バスの中は信じられないほど気まずかった）" },
+  { "type": "dialogue", "character": null, "text": "（俺としょうは、夕食を買ったコンビニの前で、黙って缶ジュースを飲んでいた）", "background": "haikei/haikei2.jpg", "char_image": "image/syou2.png" },
+  { "type": "dialogue", "character": "しょう", "text": "……なあ、ショウ", "char_image": "image/wakayama1.png" },
+  { "type": "dialogue", "character": "ショウ", "text": "……なんだ", "char_image": "image/syou2.png" },
+  { "type": "dialogue", "character": "しょう", "text": "……あれは、言っちゃダメだよ。女の子が一番見せたくないところを、笑っちゃダメだ", "char_image": "image/wakayama1.png" },
+  { "type": "dialogue", "character": "ショウ", "text": "……分かってる" },
+  { "type": "dialogue", "character": "しょう", "text": "……もう、会ってくれないかもな", "char_image": "image/wakayama1.png" },
+  { "type": "dialogue", "character": null, "text": "（しょうの言葉が、重く胸に突き刺さる。白浜の夜は、まだ始まったばかりだというのに、俺の夏は、もう終わってしまったのかもしれない）", "branch_act3": true }
     ],
     "act3_high": [
       { "type": "dialogue", "character": null, "text": "（アドベンチャーワールドから数日後。俺のスマホに、メッセージが入った。差出人は『けいすけ』）", "background": "haikei/haikei8.jpg", "char_image": "keisukee/keisuke8.png" },
@@ -170,7 +189,10 @@
       { "type": "dialogue", "character": "ショウ", "text": "触媒、ね。それで、今日の議題はなんだ？" },
       { "type": "dialogue", "character": "けいすけ", "text": "……分かっているんだ。社会システムに組み込まれるのは非合理だと言いながら、そこから外れて孤立するのもまた、生存戦略として非合理だということが。このパラドックスの解が、見つからない" },
       { "type": "dialogue", "character": "けいすけ", "text": "なあ、ショウ。お前は、いつも単純明快だ。その単純さの奥にある『核』は何だ？ お前なら、この矛盾をどう考える？" },
-      { "type": "choice", "options": [ { "text": "システムのルールが気に食わないなら、自分がルールそのものになればいい。誰にも文句を言わせない、絶対的な『個』に", "score": 2, "next_block": "ending_true" }, { "text": "お前のその『悩み』、今すぐベンチプレスで持ち上げてやる。何キロだ？", "score": 1, "next_block": "ending_normal" }, { "text": "なるほど、分かった。つまり、最強の筋肉があれば社会など気にせず生きていける。結論は俺と同じだな！", "score": 0, "next_block": "ending_bad" } ] }
+      { "type": "choice", "options": [ { "text": "システムのルールが気に食わないなら、自分がルールそのものになればいい。誰にも文句を言わせない、絶対的な『個』に", "score": 2, "next_block": "final_choice" }, { "text": "お前のその『悩み』、今すぐベンチプレスで持ち上げてやる。何キロだ？", "score": 1, "next_block": "final_choice" }, { "text": "なるほど、分かった。つまり、最強の筋肉があれば社会など気にせず生きていける。結論は俺と同じだな！", "score": 0, "next_block": "final_choice" } ] }
+    ],
+    "final_choice": [
+      { "type": "dialogue", "character": null, "text": "（選択の時が来た。これまでの選択が、君の運命を決める）", "branch_ending": true }
     ],
     "act3_mid": [
       { "type": "dialogue", "character": null, "text": "（アドベンチャーワールドでの一件から数日。しょうから『今夜、白良浜で花火しない？』と誘われた。行ってみると、そこにはしょうと、少し離れた場所にけいすけがいた）", "background": "haikei/haikei2.jpg", "char_image": "image/syou1.png" },
@@ -181,17 +203,26 @@
       { "type": "dialogue", "character": "けいすけ", "text": "……" },
       { "type": "dialogue", "character": "けいすけ", "text": "……綺麗だとか、楽しいとか、そういう感情には何の生産性もない。一瞬で消え去る光に、人はなぜ価値を見出すんだ？ 全くもって、非合理的だ" },
       { "type": "dialogue", "character": "けいすけ", "text": "……どうせお前は、『花火より筋肉』とか『燃焼効率がどう』とか、そういう即物的なことしか言わないんだろうがな" },
-      { "type": "choice", "options": [ { "text": "システムのルールが気に食わないなら、自分がルールそのものになればいい。誰にも文句を言わせない、絶対的な『個』に", "score": 2, "next_block": "ending_true" }, { "text": "お前のその『悩み』、今すぐベンチプレスで持ち上げてやる。何キロだ？", "score": 1, "next_block": "ending_normal" }, { "text": "なるほど、分かった。つまり、最強の筋肉があれば社会など気にせず生きていける。結論は俺と同じだな！", "score": 0, "next_block": "ending_bad" } ] }
+      { "type": "choice", "options": [ { "text": "システムのルールが気に食わないなら、自分がルールそのものになればいい。誰にも文句を言わせない、絶対的な『個』に", "score": 2, "next_block": "final_choice" }, { "text": "お前のその『悩み』、今すぐベンチプレスで持ち上げてやる。何キロだ？", "score": 1, "next_block": "final_choice" }, { "text": "なるほど、分かった。つまり、最強の筋肉があれば社会など気にせず生きていける。結論は俺と同じだな！", "score": 0, "next_block": "final_choice" } ] }
     ],
     "act3_low": [
       { "type": "dialogue", "character": null, "text": "（あの日から数日。スマホに、けいすけから『三段壁に来い』という短いメッセージが届いた。とれとれ市場での借りを、まだ忘れてはいなかったらしい。こんな場所に呼び出すとは、悪趣味なやつだ）", "background": "haikei/haikei10.jpg", "char_image": "keisukee/keisuke6.png" },
+      { "type": "dialogue", "character": null, "text": "（月明かりに照らされた断崖絶壁に、けいすけは一人で立っていた。柵の向こうは、闇に飲まれた海だ）" },
       { "type": "dialogue", "character": "けいすけ", "text": "来たか、脳筋。遅かったな" },
       { "type": "dialogue", "character": "ショウ", "text": "こんな場所に呼び出して、何のつもりだ", "char_image": "image/syou1.png" },
       { "type": "dialogue", "character": "けいすけ", "text": "フッ。お前の限界がどこにあるのか、見極めに来ただけだ" },
-      { "type": "dialogue", "character": "けいすけ", "text": "なあ、ショウ。ここから飛び降りれば、社会というくだらないゲームから、物理的にログアウトできる。あらゆる悩みや矛盾から解放される。ある意味、最も合理的で、最終的な解決策だと思わないか？" },
+      { "type": "dialogue", "character": null, "text": "（彼女は俺に背を向けたまま、崖の下の闇を指差した）" },
+      { "type": "dialogue", "character": "けいすけ", "text": "なあ、ショウ。社会というゲームから完全に降りて、あの闇に溶けてしまえば、あらゆる悩みや矛盾から解放される。ある意味、最も合理的で、最終的な解決策だと思わないか？" },
+      { "type": "dialogue", "character": null, "text": "（その声は冷たく、本気か冗談か分からない。だが、俺の反応を、魂の底まで見透かそうとしていることだけは確かだった）" },
       { "type": "dialogue", "character": "ショウ", "text": "……くだらないことを言うな" },
-      { "type": "dialogue", "character": "けいすけ", "text": "くだらない？ なぜだ？ 論理的に説明してみろ。お前の言う『筋肉哲学』とやらは、この絶対的な『死』という論理の前で、果たして意味を成すのか？" },
-      { "type": "choice", "options": [ { "text": "システムのルールが気に食わないなら、自分がルールそのものになればいい。誰にも文句を言わせない、絶対的な『個』に", "score": 2, "next_block": "ending_true" }, { "text": "お前のその『悩み』、今すぐベンチプレスで持ち上げてやる。何キロだ？", "score": 1, "next_block": "ending_normal" }, { "text": "なるほど、分かった。つまり、最強の筋肉があれば社会など気にせず生きていける。結論は俺と同じだな！", "score": 0, "next_block": "ending_bad" } ] }
+      { "type": "dialogue", "character": "けいすけ", "text": "くだらない？ なぜだ？ 論理的に説明してみろ。お前の言う『筋肉哲学』とやらは、この絶対的な『無意味』という論理の前で、果たして意味を成すのか？" },
+      { "type": "dialogue", "character": null, "text": "（彼女はゆっくりと振り返る。その目は、獲物を追い詰める捕食者のように、冷たく光っていた。ここで凡庸な答えを返せば、俺は二度と彼女の世界に上がることはできないだろう）" },
+      { "type": "choice", "options": [
+          { "text": "システムのルールが気に食わないなら、自分がルールそのものになればいい。誰にも文句を言わせない、絶対的な『個』に", "score": 2, "next_block": "ending_true" },
+          { "text": "お前のその『悩み』、今すぐベンチプレスで持ち上げてやる。何キロだ？", "score": 1, "next_block": "ending_normal" },
+          { "text": "なるほど、分かった。つまり、最強の筋肉があれば社会など気にせず生きていける。結論は俺と同じだな！", "score": 0, "next_block": "ending_bad" }
+        ]
+      }
     ],
     "ending_true": [
       { "type": "dialogue", "character": "ショウ", "text": "システムのルールが気に食わないなら、自分がルールそのものになればいい。誰にも文句を言わせない、絶対的な『個』に", "char_image": "image/syou1.png" },
@@ -218,17 +249,41 @@
       { "type": "dialogue", "character": "けいすけ", "text": "フン。楽しみにしてる" },
       { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "非合理な君と過ごした、あの夏。俺たちが見つけたのは、恋とか愛とか、そんな陳腐な言葉じゃなく、『最強の個として、共に立つ』という、ただ一つの答え。筋肉は裏切らない。そして、俺の隣で最強を目指す君も、決して裏切らない。俺たちの戦いは、まだ始まったばかりだ。", "ending": "true" }
     ],
-    "ending_normal": [
-      { "type": "dialogue", "character": "ショウ", "text": "お前のその『悩み』、今すぐベンチプレスで持ち上げてやる。何キロだ？", "char_image": "image/syou1.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……ふっ。本当に、お前はどこまでいっても脳筋だな。ボクの悩みは、質量に換算できない", "char_image": "keisukee/keisuke7.png" },
-      { "type": "dialogue", "character": "ショウ", "text": "そうか？ なら、俺が担げないほどの重さということか。それは手強いな" },
-      { "type": "dialogue", "character": "けいすけ", "text": "そういう意味じゃない…。まあ、いい" },
-      { "type": "dialogue", "character": "けいすけ", "text": "感謝はしてやる、ショウ。お前のその、常軌を逸したバカさ加減のおかげで、少しだけ悩み事がどうでもよくなった" },
-      { "type": "dialogue", "character": "ショウ", "text": "そうか。ならよかった" },
-      { "type": "dialogue", "character": "けいすけ", "text": "ボクの答えは、まだ保留だ。夏が終われば、ボクはボクの戦場に戻る。そこで、一人で答えを探さないといけない" },
-      { "type": "dialogue", "character": null, "text": "【エピローグ】", "char_image": "keisukee/keisuke16.png" },
-      { "type": "dialogue", "character": null, "text": "（最後の花火が終わり、俺たちは解散した。けいすけは「じゃあな」と短く告げると、一人で去っていった。その背中は、少しだけ寂しそうだった）" },
-      { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "結局、俺は彼女の悩みを解決することはできなかった。俺たちは、交わることのない二つの線のように、またそれぞれの日常に戻っていく。だが、不思議と後悔はない。彼女の世界に、ほんの少しでも触れられたのなら。この夏の思い出は、プロテインのように甘く、そして少しだけ、ほろ苦い。", "ending": "normal", "char_image": "image/syou2.png" }
+"ending_normal": [
+  { "type": "dialogue", "character": null, "text": "（けいすけは俺の答えを聞くと、一瞬きょとんとした顔をし、次の瞬間、こらえきれないというようにフッと噴き出した）" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……ふっ。本当に、お前はどこまでいっても脳筋だな。ボクの悩みは、質量に換算できない", "char_image": "keisukee/keisuke7.png" },
+  { "type": "dialogue", "character": "ショウ", "text": "そうか？なら、俺が担げないほどの重さということか。それは手強いな", "char_image": "image/syou1.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "そういう意味じゃない…。まあ、いい" },
+  { "type": "dialogue", "character": "けいすけ", "text": "感謝はしてやる、ショウ。お前のその、常軌を逸したバカさ加減のおかげで、少しだけ悩み事がどうでもよくなった" },
+  { "type": "dialogue", "character": "けいすけ", "text": "ボクの答えは、まだ保留だ。夏が終われば、ボクはボクの戦場に戻る。そこで、一人で答えを探さないといけない" },
+  { "type": "dialogue", "character": null, "text": "【エピローグ】" },
+  { "type": "dialogue", "character": null, "text": "（最後の花火が終わり、俺たちは解散することになった。けいすけは不意に振り返り、悪戯っぽく笑った）", "background": "haikei/haikei2.jpg", "char_image": "keisukee/keisuke7.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "じゃあな、脳筋。……まあ、退屈はしない夏だった" },
+  { "type": "dialogue", "character": null, "text": "（そう言い残し、彼女は夜の闇に消えていく。その足取りは、どこか軽やかに見えた）" },
+  { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "俺は、彼女の抱える複雑な問いに、完璧な答えを出せたわけじゃない。俺にできたのは、隣で自分の哲学を語ることだけだ。それでも、確かに俺の言葉は彼女に届いていた。俺と彼女の世界は違う。それでも、あの夏、確かに俺たちの世界は重なり合ったんだ。非合理で、理屈っぽくて、どうしようもなく魅力的な君と過ごした日々。この夏の思い出は、最高級のホエイプロテインのように甘く、俺の心と身体の、最高の糧になるだろう。", "char_image": "image/syou1.png", "ending": "normal" }
+],
+    "ending_normal_from_true": [
+      { "type": "dialogue", "character": "ショウ", "text": "システムのルールが気に食わないなら、自分がルールそのものになればいい。誰にも文句を言わせない、絶対的な『個』に", "char_image": "image/syou1.png" },
+      { "type": "dialogue", "character": "けいすけ", "text": "……自分が、ルールに…？", "char_image": "keisukee/keisuke15.png" },
+      { "type": "dialogue", "character": "ショウ", "text": "そうだ。社会も、大学も、会社も、すべては他人（システム）が作った土俵だ。その土俵の上で相撲を取るから、ルールの矛盾に腹が立つ。だが、お前自身が、誰にも壊されない、誰にも動かせない、絶対的な『土俵』そのものになったらどうだ？" },
+      { "type": "dialogue", "character": "けいすけ", "text": "……！" },
+      { "type": "dialogue", "character": "ショウ", "text": "肉体を極限まで鍛え、精神を極限まで磨き上げる。学問でも、芸術でもいい。誰にも追随を許さない『個』としての価値を確立する。そうなれば、お前が進む場所が、新たなルールになる。社会がお前に合わせるんだ。これ以上に合理的で、痛快なことがあるか？" },
+      { "type": "dialogue", "character": null, "text": "夕日が、俺たちのシルエットを長く伸ばす。" },
+      { "type": "dialogue", "character": "けいすけ", "text": "……ふっ……ははは！ なるほどな！ そうか、そういうことか！", "char_image": "keisukee/keisuke3.png" },
+      { "type": "dialogue", "character": "けいすけ", "text": "システムへの参加・不参加という二元論に囚われていたボクが、愚かだった。第三の選択肢…『システムを凌駕する個になる』。クククッ、最高に野蛮で、最高にクレバーな答えだ。気に入ったぞ、ショウ！" },
+      { "type": "dialogue", "character": "ショウ", "text": "フッ…当然だ" },
+      { "type": "dialogue", "character": "けいすけ", "text": "ああ、まったくもって、お前は面白い。ボクの凝り固まった論理を、いつも木っ端微塵に破壊していく。……決めた。ボクも、ボクだけの『土俵』を作ってみせる。誰にも文句は言わせない", "next_block": "ending_normal_epilogue" }
+    ],
+    "ending_normal_from_bad": [
+      { "type": "dialogue", "character": "ショウ", "text": "なるほど、分かった。つまり、最強の筋肉があれば社会など気にせず生きていける。結論は俺と同じだな！", "char_image": "image/syou1.png" },
+      { "type": "dialogue", "character": "けいすけ", "text": "……そうか。やはり、お前には何も届かなかったな", "char_image": "keisukee/keisuke13.png", "next_block": "ending_normal_epilogue" }
+    ],
+    "ending_normal_epilogue": [
+      { "type": "dialogue", "character": null, "text": "【エピローグ】" },
+      { "type": "dialogue", "character": null, "text": "（最後の花火が終わり、俺たちは解散することになった。けいすけは不意に振り返り、悪戯っぽく笑った）", "background": "haikei/haikei2.jpg", "char_image": "keisukee/keisuke16.png" },
+      { "type": "dialogue", "character": "けいすけ", "text": "じゃあな、脳筋。……まあ、退屈はしない夏だった" },
+      { "type": "dialogue", "character": null, "text": "（そう言い残し、彼女は夜の闇に消えていく。その足取りは、どこか軽やかに見えた）" },
+      { "type": "dialogue", "character": "ナレーション（ショウ）", "text": "俺は、彼女の抱える複雑な問いに、完璧な答えを出せたわけじゃない。俺にできたのは、隣で自分の哲学を語ることだけだ。それでも、確かに俺の言葉は彼女に届いていた。俺と彼女の世界は違う。それでも、あの夏、確かに俺たちの世界は重なり合ったんだ。非合理で、理屈っぽくて、どうしようもなく魅力的な君と過ごした日々。この夏の思い出は、最高級のホエイプロテインのように甘く、俺の心と身体の、最高の糧になるだろう。", "char_image": "image/syou1.png", "ending": "normal" }
     ],
     "ending_bad": [
       { "type": "dialogue", "character": "ショウ", "text": "なるほど、分かった。つまり、最強の筋肉があれば社会など気にせず生きていける。結論は俺と同じだな！", "char_image": "image/syou1.png" },
@@ -339,39 +394,53 @@
       { "type": "dialogue", "character": "けいすけ", "text": "お前は、なぜ泣いているんだ？ このショーのどこに、それほどまでにお前の感情を揺さぶる要素があった？ 論理的に説明してみろ", "char_image": "keisukee/keisuke4.png" },
       { "type": "choice", "options": [ { "text": "理屈じゃないんだ！ すごいものをすごいって感じて、心が震える。ただそれだけだよ！", "score": 2, "next_block": "act2_choice_2pt" }, { "text": "ええっと…イルカたちが頑張ってる姿と、トレーナーさんの笑顔が…なんか、こう…グッときて…", "score": 1, "next_block": "act2_choice_1pt" }, { "text": "大丈夫！ 君もいつか、こういうので泣けるようになるよ！", "score": 0, "next_block": "act2_choice_0pt" } ] }
     ],
-    "act2_choice_2pt": [
-      { "type": "dialogue", "character": "しょう", "text": "理屈じゃないんだ！ すごいものをすごいって感じて、心が震える。ただそれだけだよ！", "char_image": "image/wakayama2.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……そうか。『説明できない』。それが、お前の答えか", "char_image": "keisukee/keisuke4.png" },
-      { "type": "dialogue", "character": "しょう", "text": "う、うん…ごめん、うまく言えなくて…", "char_image": "image/wakayama2.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "いや、いい。それが一番、腑に落ちた", "char_image": "keisukee/keisuke4.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "ボクは今まで、理解できないものを分解し、分析し、自分の知識体系に組み込むことだけを考えてきた。だが、お前は違う。理解できないものを、理解できないまま、丸ごと受け入れて味わっている。……なるほどな。そういうアプローチもあるのか" },
-      { "type": "dialogue", "character": "ナレーション（しょう）", "text": "（ショーが終わった後も、俺たちは園内を見て回った。けいすけは時折、動物を見ては分析的なことを口にするが、以前のような刺々しさはなく、むしろ俺の素直な感想を面白そうに聞いているようだった）", "char_image": null },
-      { "type": "dialogue", "character": "ナレーション（しょう）", "text": "（そして、閉園時間。俺たちはアドベンチャーワールドを後にした）", "branch_act3": true }
-    ],
-    "act2_choice_1pt": [
-      { "type": "dialogue", "character": "しょう", "text": "ええっと…イルカたちが頑張ってる姿と、トレーナーさんの笑顔が…なんか、こう…グッときて…", "char_image": "image/wakayama3.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……なるほど。感動の構造を言語化できない、か。まあ、お前にそれを求めるのが間違いだったな", "char_image": "keisukee/keisuke8.png" },
-      { "type": "dialogue", "character": "しょう", "text": "ご、ごめん…", "char_image": "image/wakayama3.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "別に謝る必要はない。ボクの期待値設定が間違っていただけだ", "char_image": "keisukee/keisuke8.png" },
-      { "type": "dialogue", "character": "ナレーション（しょう）", "text": "（その後も園内を回ったが、けいすけは以前より口数が減ってしまった。時折ショウの筋肉談義には相槌を打つが、俺の方にはあまり視線を向けない。明らかに、俺への興味が薄れてしまったのが分かる）", "char_image": null },
-      { "type": "dialogue", "character": "ナレーション（しょう）", "text": "（閉園時間。俺たちはアドベンチャーワールドを後にした）", "branch_act3": true }
-    ],
-    "act2_choice_0pt": [
-      { "type": "dialogue", "character": "しょう", "text": "大丈夫！ 君もいつか、こういうので泣けるようになるよ！", "char_image": "image/wakayama2.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……なんだと？", "background": "haikei/haikei8.jpg", "char_image": "keisukee/keisuke13.png" },
-      { "type": "dialogue", "character": "しょう", "text": "え…？", "char_image": "image/wakayama2.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "お前は今、ボクの感受性が、お前より劣っていると断じたわけか。そして、お前と同じレベルまで『成長』させてやると。…そう言ったんだな？", "char_image": "keisukee/keisuke13.png" },
-      { "type": "dialogue", "character": "しょう", "text": "ち、違う！ そういう意味じゃなくて！", "char_image": "image/wakayama2.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "黙れ。お前のその無自覚な傲慢さが、一番質が悪い。善意の皮を被った、ただの侮辱だ。……心底、反吐が出る", "char_image": "keisukee/keisuke13.png" },
-      { "type": "dialogue", "character": "ショウ", "text": "おい、待て。こいつの言動に深い意味はない。悪気がないのは俺が保証する", "char_image": "image/syou1.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……その保証に、何の価値が？", "char_image": "keisukee/keisuke13.png" },
-      { "type": "dialogue", "character": "しょう", "text": "ごめんなさい…！ 本当に、ごめんなさい…！ 俺、人の気持ちを考えるのが、すごく下手なんだ…。でも、君を馬鹿にするつもりなんて、本当に、これっぽっちもなかったんだ…！", "char_image": "image/wakayama2.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……もういい。分かった。お前の問題は、知能の有無ではない。共感性の欠如と、過剰な自己投影だ。だから、相手の感情を無視して、自分の『良かれ』を押し付ける", "char_image": "keisukee/keisuke13.png" },
-      { "type": "dialogue", "character": null, "text": "（アドベンチャーワールドからの帰り道、バスの中はずっと重い空気だった。バスを降りた後、ショウが気を利かせて「俺、飲み物買ってくる」とコンビニへ向かい、俺とけいすけが二人きりになった）", "background": "haikei/haikei2.jpg" },
-      { "type": "dialogue", "character": "しょう", "text": "……今日は、本当にごめん", "char_image": "image/wakayama3.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "……謝罪はもういい。それより、お前は少し、自分と他人の境界線を学ぶべきだ。でないと、いつか本当に取り返しのつかないことになるぞ。お前のその性質は、弱った人間を惹きつけ、そして破滅させる", "char_image": "keisukee/keisuke22.png" },
-      { "type": "dialogue", "character": "けいすけ", "text": "ボクは帰る。じゃあな" },
-      { "type": "dialogue", "character": "ナレーション（しょう）", "text": "（彼女はそう言って去っていった。俺は、その背中を見送りながら、自分の不器用さをただただ噛みしめるしかなかった。でも、まだ終わりじゃない。きっと…）", "branch_act3": true }
+"act2_choice_2pt": [
+  { "type": "dialogue", "character": "しょう", "text": "理屈じゃないんだ！ すごいものをすごいって感じて、心が震える。ただそれだけだよ！", "char_image": "image/wakayama2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……そうか。『説明できない』。それが、お前の答えか", "char_image": "keisukee/keisuke4.png" },
+  { "type": "dialogue", "character": "しょう", "text": "う、うん…ごめん、うまく言えなくて…", "char_image": "image/wakayama2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "いや、いい。それが一番、腑に落ちた" },
+  { "type": "dialogue", "character": "けいすけ", "text": "ボクは今まで、理解できないものを分解し、分析し、自分の知識体系に組み込むことだけを考えてきた。だが、お前は違う。理解できないものを、理解できないまま、丸ごと受け入れて味わっている。……なるほどな。そういうアプローチもあるのか" },
+  { "type": "dialogue", "character": null, "text": "（ショーが終わった後も、俺たちは園内を見て回った。けいすけは時折、動物を見ては分析的なことを口にするが、以前のような刺々しさはなく、むしろ俺の素直な感想を面白そうに聞いているようだった）" },
+  { "type": "dialogue", "character": null, "text": "（そして、閉園時間。俺たちはアドベンチャーワールドを後にした）" },
+  { "type": "dialogue", "character": null, "text": "（ショウが「のど乾いた！飲み物買ってくる！」と言って走り去り、俺とけいすけは二人きりで、オレンジ色に染まる砂浜に座っていた。寄せては返す波の音が、心地いい）", "background": "haikei/haikei8.jpg", "char_image": "keisukee/keisuke4.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……なあ、しょう" },
+  { "type": "dialogue", "character": "しょう", "text": "なに？ けいすけちゃん", "char_image": "image/wakayama2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "今日、お前の言う『感情』の洪水に、一日中晒されてみた。……疲れたが、悪くなかった" },
+  { "type": "dialogue", "character": null, "text": "（彼女は、膝を抱えながら、遠くの水平線を見つめていた）" },
+  { "type": "dialogue", "character": "けいすけ", "text": "ボクが、社会というシステムを『つまらない』と感じるのも、結局は感情なのかもしれないな。楽しい、悲しい、好き、嫌い…そういうノイズを切り捨ててきたつもりだったが、本当は、ただ蓋をしていただけなのかも…" },
+  { "type": "dialogue", "character": null, "text": "（彼女は自嘲するように笑い、そして俺の方を向いた。その瞳は、助けを求めるように、少しだけ揺れていた。彼女は今、自分の信じてきたものの土台が揺らぎ始めていることを、俺にだけ打ち明けようとしていた）", "branch_act3": true }
+],
+"act2_choice_1pt": [
+  { "type": "dialogue", "character": "しょう", "text": "ええっと…イルカたちが頑張ってる姿と、トレーナーさんの笑顔が…なんか、こう…グッときて…", "char_image": "image/wakayama3.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……なるほど。感動の構造を言語化できない、か。まあ、お前にそれを求めるのが間違いだったな", "char_image": "keisukee/keisuke8.png" },
+  { "type": "dialogue", "character": "しょう", "text": "ご、ごめん…", "char_image": "image/wakayama3.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "別に謝る必要はない。ボクの期待値設定が間違っていただけだ" },
+  { "type": "dialogue", "character": null, "text": "（それきり、彼女は黙り込んでしまった。俺たちの間に、少し気まずい空気が流れる）" },
+  { "type": "dialogue", "character": null, "text": "（その後も園内を回ったが、けいすけは以前より口数が減ってしまった。時折ショウの筋肉談義には相槌を打つが、俺の方にはあまり視線を向けない。明らかに、俺への興味が薄れてしまったのが分かる）" },
+  { "type": "dialogue", "character": null, "text": "（閉園時間。俺たちはアドベンチャーワールドを後にした）" },
+  { "type": "dialogue", "character": null, "text": "（3人で並んで砂浜を歩く。ショウが気を遣ってか、色々と話題を振るが、会話はどこか弾まない）", "background": "haikei/haikei8.jpg", "char_image": "keisukee/keisuke9.png" },
+  { "type": "dialogue", "character": "しょう", "text": "（どうしよう… 完全にがっかりさせちゃった…。このままじゃ、ダメだ…）", "char_image": "image/wakayama2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……ボクは、ここで失礼する。今日はそれなりに楽しめた。礼を言う" },
+  { "type": "dialogue", "character": "しょう", "text": "あ、うん…！ こちらこそ、付き合ってくれてありがとう！", "char_image": "image/wakayama2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "別に。ボクのデータ収集に付き合わせただけだ。じゃあな" },
+  { "type": "dialogue", "character": null, "text": "（彼女は最低限の挨拶を済ませると、一人で歩き去っていった。その背中は、やはりどこか壁を感じさせるものだったが、完全な拒絶ではなかった。まだ、チャンスはあるかもしれない）", "branch_act3": true }
+],
+"act2_choice_0pt": [
+  { "type": "dialogue", "character": "しょう", "text": "大丈夫！ 君もいつか、こういうので泣けるようになるよ！", "char_image": "image/wakayama2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……なんだと？", "background": "haikei/haikei8.jpg", "char_image": "keisukee/keisuke13.png" },
+  { "type": "dialogue", "character": "しょう", "text": "え…？", "char_image": "image/wakayama2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "お前は今、ボクの感受性が、お前より劣っていると断じたわけか。そして、お前と同じレベルまで『成長』させてやると。…そう言ったんだな？" },
+  { "type": "dialogue", "character": "しょう", "text": "ち、違う！ そういう意味じゃなくて！" },
+  { "type": "dialogue", "character": "けいすけ", "text": "黙れ。お前のその無自覚な傲慢さが、一番質が悪い。善意の皮を被った、ただの侮辱だ。……心底、反吐が出る" },
+  { "type": "dialogue", "character": "ショウ", "text": "おい、待て。こいつの言動に深い意味はない。悪気がないのは俺が保証する", "char_image": "image/syou1.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……その保証に、何の価値が？" },
+  { "type": "dialogue", "character": "しょう", "text": "ごめんなさい…！ 本当に、ごめんなさい…！ 俺、人の気持ちを考えるのが、すごく下手なんだ…。でも、君を馬鹿にするつもりなんて、本当に、これっぽっちもなかったんだ…！", "char_image": "image/wakayama2.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……もういい。分かった。お前の問題は、知能の有無ではない。共感性の欠如と、過剰な自己投影だ。だから、相手の感情を無視して、自分の『良かれ』を押し付ける" },
+  { "type": "dialogue", "character": null, "text": "（アドベンチャーワールドからの帰り道、バスの中はずっと重い空気だった。バスを降りた後、ショウが気を利かせて「俺、飲み物買ってくる」とコンビニへ向かい、俺とけいすけが二人きりになった）", "background": "haikei/haikei2.jpg", "char_image": "image/wakayama3.png" },
+  { "type": "dialogue", "character": "しょう", "text": "……今日は、本当にごめん" },
+  { "type": "dialogue", "character": "けいすけ", "text": "……謝罪はもういい。それより、お前は少し、自分と他人の境界線を学ぶべきだ。でないと、いつか本当に取り返しのつかないことになるぞ。お前のその性質は、弱った人間を惹きつけ、そして破滅させる", "char_image": "keisukee/keisuke22.png" },
+  { "type": "dialogue", "character": "けいすけ", "text": "ボクは帰る。じゃあな" },
+  { "type": "dialogue", "character": null, "text": "（彼女はそう言って去っていった。俺は、その背中を見送りながら、自分の不器用さをただただ噛みしめるしかなかった。でも、まだ終わりじゃない。きっと…）", "branch_act3": true }
     ],
     "act3_high": [
       { "type": "dialogue", "character": null, "text": "（アドベンチャーワールドから数日後。俺のスマホに、けいすけから『白良浜。北側の岩場。話がある』という、短いメッセージが届いた。俺は急いで指定された場所へ向かう）", "background": "haikei/haikei2.jpg", "char_image": "keisukee/keisuke10.png" },
@@ -380,7 +449,10 @@
       { "type": "dialogue", "character": "けいすけ", "text": "あの日以来、ずっと考えていた。ボクが切り捨ててきた『感情』というノイズについて。……そして、少しだけ、認めたくなかった結論にたどり着いた" },
       { "type": "dialogue", "character": "けいすけ", "text": "ボクが社会システムを『つまらない』と感じるのも、結局は感情だ。そして、人と深く関わることを『非効率だ』と避けてきたのも…本当は、ただ傷つくのが『怖い』だけだったのかもしれないな" },
       { "type": "dialogue", "character": "けいすけ", "text": "なあ、しょう。お前はいつも、自分の『好き』や『悲しい』に正直だ。そんなお前から見て、今のボクは、どう見える？ お前のその、何のフィルターもかかっていない目で、ボクに答えをくれないか？" },
-      { "type": "choice", "options": [ { "text": "まともじゃなくていい！ 俺は、君が君のままで、笑っていてくれたら、それでいい！", "score": 2, "next_block": "ending_true" }, { "text": "きっと、お互いに足りないものを、補い合っていけばいいんじゃないかな", "score": 1, "next_block": "ending_normal" }, { "text": "ごめん…やっぱり、俺には分からないよ…", "score": 0, "next_block": "ending_bad" } ] }
+      { "type": "choice", "options": [ { "text": "まともじゃなくていい！ 俺は、君が君のままで、笑っていてくれたら、それでいい！", "score": 2, "next_block": "final_choice" }, { "text": "きっと、お互いに足りないものを、補い合っていけばいいんじゃないかな", "score": 1, "next_block": "final_choice" }, { "text": "ごめん…やっぱり、俺には分からないよ…", "score": 0, "next_block": "final_choice" } ] }
+    ],
+    "final_choice": [
+      { "type": "dialogue", "character": null, "text": "（選択の時が来た。これまでの選択が、君の運命を決める）", "branch_ending": true }
     ],
     "act3_mid": [
       { "type": "dialogue", "character": null, "text": "（あれから数日。俺は、ショウと一緒に夜の白浜を散歩していた。アドベンチャーワールドでの一件以来、けいすけちゃんとは連絡を取っていない）", "background": "haikei/haikei2.jpg", "char_image": "image/wakayama3.png" },
@@ -392,7 +464,7 @@
       { "type": "dialogue", "character": "けいすけ", "text": "……まあ、いい。ちょうど、お前に聞きたいことがあった", "char_image": "keisukee/keisuke21.png" },
       { "type": "dialogue", "character": "けいすけ", "text": "ボクは、自分の感情をノイズだと切り捨ててきた。だが、お前を見ていると、その『ノイズ』こそが、人間を動かす原動力なんじゃないかと思えてくる。……だが、それはあまりに不安定で、危険なエネルギーだ" },
       { "type": "dialogue", "character": "けいすけ", "text": "なあ、しょう。お前は、その制御不能な感情に振り回されて、後悔したことはないのか？ その感情論の、限界とやらを教えてくれ" },
-      { "type": "choice", "options": [ { "text": "まともじゃなくていい！ 俺は、君が君のままで、笑っていてくれたら、それでいい！", "score": 2, "next_block": "ending_true" }, { "text": "きっと、お互いに足りないものを、補い合っていけばいいんじゃないかな", "score": 1, "next_block": "ending_normal" }, { "text": "ごめん…やっぱり、俺には分からないよ…", "score": 0, "next_block": "ending_bad" } ] }
+      { "type": "choice", "options": [ { "text": "まともじゃなくていい！ 俺は、君が君のままで、笑っていてくれたら、それでいい！", "score": 2, "next_block": "final_choice" }, { "text": "きっと、お互いに足りないものを、補い合っていけばいいんじゃないかな", "score": 1, "next_block": "final_choice" }, { "text": "ごめん…やっぱり、俺には分からないよ…", "score": 0, "next_block": "final_choice" } ] }
     ],
     "act3_low": [
       { "type": "dialogue", "character": null, "text": "（あの日以来、けいすけからの連絡はなかった。俺は、彼女に言われた言葉をずっと引きずっていた。あの日、俺をかばってくれたショウに相談すると、「なら、もう一度ぶつかってみろ。今度は、逃げるな」と背中を押された）", "background": "haikei/haikei1.jpg", "char_image": "image/wakayama3.png" },
@@ -403,7 +475,7 @@
       { "type": "dialogue", "character": "しょう", "text": "わ、分からない…。でも、ただ、もう一度、君とちゃんと向き合いたいんだ！", "char_image": "image/wakayama3.png" },
       { "type": "dialogue", "character": "けいすけ", "text": "いいだろう。なら、これが最後の問いだ。ボクは、感情を切り捨てて生きてきた。お前は、感情のままに生きて、他人を傷つけた。どちらも、欠陥品だ", "char_image": "keisukee/keisuke21.png" },
       { "type": "dialogue", "character": "けいすけ", "text": "欠陥品であるボクたちが、この先、どうすれば『まとも』に生きていける？ お前の感情論で、この問いに答えてみせろ。これが、お前に与える最後のチャンスだ" },
-      { "type": "choice", "options": [ { "text": "まともじゃなくていい！ 俺は、君が君のままで、笑っていてくれたら、それでいい！", "score": 2, "next_block": "ending_true" }, { "text": "きっと、お互いに足りないものを、補い合っていけばいいんじゃないかな", "score": 1, "next_block": "ending_normal" }, { "text": "ごめん…やっぱり、俺には分からないよ…", "score": 0, "next_block": "ending_bad" } ] }
+      { "type": "choice", "options": [ { "text": "まともじゃなくていい！ 俺は、君が君のままで、笑っていてくれたら、それでいい！", "score": 2, "next_block": "final_choice" }, { "text": "きっと、お互いに足りないものを、補い合っていけばいいんじゃないかな", "score": 1, "next_block": "final_choice" }, { "text": "ごめん…やっぱり、俺には分からないよ…", "score": 0, "next_block": "final_choice" } ] }
     ],
     "ending_true": [
       { "type": "dialogue", "character": "しょう", "text": "まともじゃなくていい！ 俺は、君が君のままで、笑っていてくれたら、それでいい！", "char_image": "image/wakayama4.png" },
