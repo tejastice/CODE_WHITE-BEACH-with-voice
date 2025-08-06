@@ -574,14 +574,14 @@
       { "type": "dialogue", "character": null, "text": "（壮大な自然に触れたけいすけ様は、ご機嫌麗しいようだった。くっ…今日のポイントはショウの勝ちか…！）", "next_block": "ending" }
     ],
     "ending": [
-      { "type": "dialogue", "character": null, "text": "（数日後、白浜のビーチ。パラソルの下、リクライニングチェアに寝そべるけいすけ。その両脇で、しょうがうちわで扇ぎ、ショウが完璧なタイミングで冷たいドリンクを差し出している）", "background": "haikei/haikei1.jpg", "char_image": "keisukee/keisuke28.png" },
+      { "type": "dialogue", "character": null, "text": "（数日後、白浜のビーチ。パラソルの下、リクライニングチェアに寝そべるけいすけ。その両脇で、しょうがうちわで扇ぎ、ショウが完璧なタイミングで冷たいドリンクを差し出している）", "background": "haikei/haikei17.jpg", "char_image": "keisukee/keisuke28.png" },
       { "type": "dialogue", "character": "けいすけ", "text": "ふむ。南方熊楠の知性、橋杭岩の自然科学、アドベンチャーワールドの生命の神秘、とれとれ市場の経済活動…この数日間で、和歌山の持つ多様なパラメータを観測できた。なかなか有意義な夏だったな" },
       { "type": "dialogue", "character": "しょう", "text": "けいすけ様にご満足いただけて、僕（しもべ）として、これ以上の喜びはありません！" },
       { "type": "dialogue", "character": "ショウ", "text": "これも全て、けいすけ様の卓越したプランニングと、我々僕（しもべ）への的確な指示の賜物です！" },
       { "type": "dialogue", "character": "けいすけ", "text": "フン。分かっているじゃないか" },
       { "type": "dialogue", "character": "けいすけ", "text": "まあ、たまには、こういう非合理で、贅沢な時間の使い方も悪くない。……お前たち二人が、飽きさせない限りはな" },
       { "type": "dialogue", "character": "しょう＆ショウ", "text": "「「来年の夏も、再来年の夏も！ 全力でお仕えします、ご主人様！！」」" },
-      { "type": "dialogue", "character": null, "text": "（俺たちの暑苦しい忠誠の叫びが、白浜の空に響き渡る。女王様は、やれやれというように笑いながら、でも、本当に楽しそうに、僕（しもべ）たちが献上した最高の夏を満喫するのだった）" },
+      { "type": "dialogue", "character": null, "text": "（俺たちの暑苦しい忠誠の叫びが、白浜の空に響き渡る。女王様は、やれやれというように笑いながら、でも、本当に楽しそうに、僕（しもべ）たちが献上した最高の夏を満喫するのだった）" , "char_image": "keisukee/keisuke29.png"},
       { "type": "ending", "ending": "hidden" }
     ]
   }
