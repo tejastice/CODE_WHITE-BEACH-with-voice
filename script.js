@@ -403,7 +403,7 @@ function showEnding() {
     elements.endingTitle.textContent = endingTitles[endingType];
     
     // エンディングテキストは簡潔なメッセージのみ
-    elements.endingText.textContent = "プレイありがとうございました。";
+    elements.endingText.textContent = "プレイありがとうございました。\n\nこの物語はフィクションです！実在の人物・団体等とは関係ございません！";
     
     // TRUE ENDの場合はクリア記録を保存
     if (endingType === 'true' && protagonistKey !== '隠しシナリオ') {
