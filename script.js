@@ -52,10 +52,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 async function loadScenarioData() {
     try {
         showScreen(elements.loadingScreen);
-        const response = await fetch('scenario.json');
+        const response = await fetch('scenario_rev.json');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         scenarioData = await response.json();
-        console.log('シナリオデータ読み込み完了');
+        console.log('シナリオデータ読み込み完了（scenario_rev.json）');
     } catch (error) {
         console.error('シナリオデータの読み込みに失敗:', error);
         alert('ゲームデータの読み込みに失敗しました。');
@@ -74,6 +74,9 @@ function setupEventListeners() {
     elements.resumeButton.addEventListener('click', () => elements.menuScreen.classList.add('hidden'));
     elements.titleReturnButton.addEventListener('click', returnToTitle);
     elements.endingTitleButton.addEventListener('click', returnToTitle);
+    
+    // キーボードイベントリスナー追加
+    document.addEventListener('keydown', handleKeyPress);
 }
 
 // ===== 画面制御 =====
@@ -171,9 +174,41 @@ function displayLine(lineData) {
         elements.speakerNameContainer.style.display = 'none';
     }
     
+    // 音声再生処理
+    playVoiceIfAvailable(lineData);
+    
     // テキスト表示
     displayTextWithTypewriter(lineData.text || '');
     updateBackButtonVisibility();
+}
+
+// ===== 音声再生システム =====
+let currentAudio = null; // 現在再生中の音声
+
+function playVoiceIfAvailable(lineData) {
+    // 前の音声を停止
+    if (currentAudio) {
+        currentAudio.pause();
+        currentAudio = null;
+    }
+    
+    // 音声ファイルパスが存在するかチェック
+    if (lineData.char_voice) {
+        try {
+            currentAudio = new Audio(lineData.char_voice);
+            currentAudio.volume = 0.8; // 音量設定
+            
+            // 音声再生開始
+            currentAudio.play().catch(error => {
+                console.warn('音声再生エラー:', error);
+                // エラーが発生してもゲームは継続
+            });
+            
+            console.log(`音声再生: ${lineData.char_voice}`);
+        } catch (error) {
+            console.warn('音声ファイル読み込みエラー:', error);
+        }
+    }
 }
 
 // ===== ブロック終端の処理（すべての遷移タイプ対応） =====
@@ -350,10 +385,35 @@ function displayTextWithTypewriter(text) {
     }, 30);
 }
 
+// ===== キーボード操作処理 =====
+function handleKeyPress(e) {
+    // エンターキー（13）またはスペースキー（32）の場合のみ処理
+    if (e.keyCode !== 13 && e.keyCode !== 32) return;
+    
+    // ゲーム画面でない場合は無視
+    if (elements.gameScreen.classList.contains('hidden')) return;
+    
+    // メニューが表示されている場合は無視
+    if (!elements.menuScreen.classList.contains('hidden')) return;
+    
+    // デフォルトの動作を防ぐ（ページスクロールなど）
+    e.preventDefault();
+    
+    // ゲーム進行処理を実行
+    handleGameProgression();
+}
+
 // ===== 画面クリック/タップ処理 =====
 function handleGameScreenClick(e) {
     // UI要素のクリックは無視
     if (e.target.closest('.choice-button, .ui-button, #back-button')) return;
+    
+    // ゲーム進行処理を実行
+    handleGameProgression();
+}
+
+// ===== ゲーム進行共通処理 =====
+function handleGameProgression() {
     if (!gameState.isPlaying || gameState.isChoiceScene) return;
     
     const currentBlockData = scenarioData[gameState.currentProtagonist][gameState.currentBlock];
